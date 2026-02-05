@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.1.1\n"
-"POT-Creation-Date: 2026-02-04 22:37+0000\n"
+"POT-Creation-Date: 2026-02-05 13:32+0000\n"
 "PO-Revision-Date: 2024-12-02 13:13+0100\n"
 "Last-Translator: Dr.-Ing. Amilcar do Carmo Lucas <amilcar.lucas@iav.de>\n"
 "Language-Team: JA\n"
@@ -66,11 +66,14 @@ msgstr "機体タイプが明示的に設定されていないため、%sを自�
 #: ardupilot_methodic_configurator/__main__.py:270
 msgid ""
 "Vehicle directory %(old_dir)s is not writable. Using %(new_dir)s instead."
-msgstr "車両ディレクトリ %(old_dir)s は書き込み可能ではありません。代わりに %(new_dir)s を使用します。"
+msgstr ""
+"車両ディレクトリ %(old_dir)s は書き込み可能ではありません。代わりに "
+"%(new_dir)s を使用します。"
 
 #: ardupilot_methodic_configurator/__main__.py:274
 msgid "Using Vehicle directory %(new_dir)s for initial parameter download."
-msgstr "初期パラメータダウンロード用に車両ディレクトリ %(new_dir)s を使用します。"
+msgstr ""
+"初期パラメータダウンロード用に車両ディレクトリ %(new_dir)s を使用します。"
 
 #: ardupilot_methodic_configurator/__main__.py:302
 #: ardupilot_methodic_configurator/data_model_parameter_editor.py:237
@@ -105,20 +108,20 @@ msgstr "パラメータのデフォルト値へのリセットに失敗しまし
 msgid "Unknown"
 msgstr "不明"
 
-#: ardupilot_methodic_configurator/__main__.py:523
+#: ardupilot_methodic_configurator/__main__.py:525
 #: ardupilot_methodic_configurator/data_model_configuration_step.py:98
 msgid "Error in derived parameters"
 msgstr "派生パラメータにエラーがあります"
 
-#: ardupilot_methodic_configurator/__main__.py:564
+#: ardupilot_methodic_configurator/__main__.py:566
 msgid "Created backup file autobackup_%02d.param"
 msgstr "バックアップファイル autobackup_%02d.param を作成しました"
 
-#: ardupilot_methodic_configurator/__main__.py:566
+#: ardupilot_methodic_configurator/__main__.py:568
 msgid "Permission denied when creating backup files: %s"
 msgstr "バックアップファイルの作成時にアクセス拒否されました: %s"
 
-#: ardupilot_methodic_configurator/__main__.py:567
+#: ardupilot_methodic_configurator/__main__.py:569
 msgid ""
 "Please check file permissions and ensure you have write access to the "
 "vehicle directory"
@@ -126,27 +129,27 @@ msgstr ""
 "ファイルの権限を確認し、車両ディレクトリへの書き込みアクセス権があることを確"
 "認してください"
 
-#: ardupilot_methodic_configurator/__main__.py:570
+#: ardupilot_methodic_configurator/__main__.py:572
 msgid "Insufficient disk space to create backup files: %s"
 msgstr "バックアップファイルを作成するためのディスク容量が不足しています: %s"
 
-#: ardupilot_methodic_configurator/__main__.py:571
+#: ardupilot_methodic_configurator/__main__.py:573
 msgid "Please free up disk space and try again"
 msgstr "ディスク容量を解放して再試行してください"
 
-#: ardupilot_methodic_configurator/__main__.py:573
+#: ardupilot_methodic_configurator/__main__.py:575
 msgid "Failed to create backup files: %s"
 msgstr "バックアップファイルの作成に失敗しました: %s"
 
-#: ardupilot_methodic_configurator/__main__.py:575
+#: ardupilot_methodic_configurator/__main__.py:577
 msgid "Unexpected error creating backup files: %s"
 msgstr "バックアップファイルの作成中に予期しないエラーが発生しました: %s"
 
-#: ardupilot_methodic_configurator/__main__.py:687
+#: ardupilot_methodic_configurator/__main__.py:689
 msgid "Incompatible parameter definition file detected"
 msgstr "互換性のないパラメータ定義ファイルが検出されました"
 
-#: ardupilot_methodic_configurator/__main__.py:688
+#: ardupilot_methodic_configurator/__main__.py:690
 msgid ""
 "The parameter definition file 'apm.pdef.xml' is incompatible with ArduPilot "
 "4.6.x firmware. It appears to be from the master branch. The file will be "
@@ -281,11 +284,21 @@ msgstr ""
 "最後にアップロードされたファイルがリストの最後のファイルです。最初から開始し"
 "ます。"
 
-#: ardupilot_methodic_configurator/backend_filesystem.py:946
+#: ardupilot_methodic_configurator/backend_filesystem.py:842
+msgid ""
+"Derived parameters were recalculated for '{param_filename}'.\n"
+"Do you want to save these changes to disk?"
+msgstr ""
+
+#: ardupilot_methodic_configurator/backend_filesystem.py:845
+msgid "Confirm derived parameter changes"
+msgstr ""
+
+#: ardupilot_methodic_configurator/backend_filesystem.py:968
 msgid "The type of the vehicle. Default is ArduCopter"
 msgstr "機体の種類。デフォルトはArduCopterです"
 
-#: ardupilot_methodic_configurator/backend_filesystem.py:952
+#: ardupilot_methodic_configurator/backend_filesystem.py:974
 msgid ""
 "Directory containing vehicle-specific intermediate parameter files. Default "
 "is the current working directory"
@@ -293,7 +306,7 @@ msgstr ""
 "機体固有の中間パラメータファイルを含むディレクトリ。デフォルトは現在の作業"
 "ディレクトリです"
 
-#: ardupilot_methodic_configurator/backend_filesystem.py:960
+#: ardupilot_methodic_configurator/backend_filesystem.py:982
 msgid ""
 "Start directly on the nth intermediate parameter file (skips previous "
 "files). Default is to start on the file next to the last that you wrote to "
@@ -304,7 +317,7 @@ msgstr ""
 "デフォルトでは、フライトコントローラに書き込んだ最後のファイルの次のファイル"
 "から開始します。ファイルが存在しない場合は、最初のファイルから開始します。"
 
-#: ardupilot_methodic_configurator/backend_filesystem.py:969
+#: ardupilot_methodic_configurator/backend_filesystem.py:991
 msgid ""
 "Allow opening and editing template files directly. Only for software "
 "developers that know what they are doing. Default is %(default)s"
@@ -312,7 +325,7 @@ msgstr ""
 "テンプレートファイルを直接開いて編集することを許可します。これは何をしている"
 "かを理解しているソフトウェア開発者のみ対象です。デフォルトは%(default)sです"
 
-#: ardupilot_methodic_configurator/backend_filesystem.py:978
+#: ardupilot_methodic_configurator/backend_filesystem.py:1000
 msgid ""
 "Save the vehicle component to the system templates. Only for software "
 "developers that know what they are doing. Default is %(default)s"
@@ -390,7 +403,10 @@ msgstr ""
 msgid ""
 "In file '{self.configuration_steps_filename}': '{filename}' {parameter_type} "
 "parameter '{parameter}' evaluation resulted in math error: {math_error}"
-msgstr "ファイル '{self.configuration_steps_filename}' 内: '{filename}' {parameter_type} パラメータ '{parameter}' の評価で数学エラーが発生しました: {math_error}"
+msgstr ""
+"ファイル '{self.configuration_steps_filename}' 内: "
+"'{filename}' {parameter_type} パラメータ '{parameter}' の評価で数学エラーが発"
+"生しました: {math_error}"
 
 #: ardupilot_methodic_configurator/backend_filesystem_configuration_steps.py:224
 msgid ""
@@ -1877,8 +1893,8 @@ msgid ""
 "settings, including antenna phase center location and constellation "
 "selection for optimal update rates"
 msgstr ""
-"アンテナフェーズセンター位置や最適な更新レートのための衛星群選択を含む、"
-"GNSS（全地球航法衛星システム）接続と設定を構成します"
+"アンテナフェーズセンター位置や最適な更新レートのための衛星群選択を含む、GNSS"
+"（全地球航法衛星システム）接続と設定を構成します"
 
 #: ardupilot_methodic_configurator/configuration_steps_strings.py:129
 msgid ""
@@ -3057,11 +3073,11 @@ msgstr ""
 #: ardupilot_methodic_configurator/data_model_motor_test.py:213
 #: ardupilot_methodic_configurator/data_model_motor_test.py:855
 msgid ""
-"Frame configuration updated: Class=%(class)d, Type=%(type)d, Motors="
-"%(motors)d"
+"Frame configuration updated: Class=%(class)d, Type=%(type)d, "
+"Motors=%(motors)d"
 msgstr ""
-"フレーム設定を更新しました：クラス=%(class)d、タイプ=%(type)d、モーター="
-"%(motors)d"
+"フレーム設定を更新しました：クラス=%(class)d、タイプ=%(type)d、モーター"
+"=%(motors)d"
 
 #: ardupilot_methodic_configurator/data_model_motor_test.py:229
 msgid "Flight controller connection required for motor testing"
@@ -4366,7 +4382,8 @@ msgstr "%sのフォールバック値が見つかりません"
 
 #: ardupilot_methodic_configurator/data_model_vehicle_components_validation.py:454
 msgid "{name} must be a {data_type_name} between {min} and {max}"
-msgstr "{name} は {min} から {max} の間の {data_type_name} でなければなりません"
+msgstr ""
+"{name} は {min} から {max} の間の {data_type_name} でなければなりません"
 
 #: ardupilot_methodic_configurator/data_model_vehicle_components_validation.py:459
 msgid "Invalid {data_type_name} value for {name}"
@@ -5316,19 +5333,19 @@ msgstr ""
 msgid "List_of_items can't be 'None'"
 msgstr "List_of_itemsを'None'にすることはできません"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:38
+#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:42
 msgid "Initializing Flight Controller"
 msgstr "フライトコントローラーを初期化しています"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:39
+#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:43
 msgid "Starting initialization..."
 msgstr "初期化を開始しています..."
 
-#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:55
+#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:59
 msgid "Invalid max_value in update_init_progress_bar progress update: %d"
 msgstr "update_init_progress_bar 進行状況更新で無効な max_value: %d"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:71
+#: ardupilot_methodic_configurator/frontend_tkinter_flightcontroller_connection_progress.py:75
 msgid "Invalid max_value in update_connect_progress_bar progress update: %d"
 msgstr "update_connect_progress_bar 進行状況更新で無効な max_value: %d"
 
@@ -6043,7 +6060,9 @@ msgstr "すべてのファイル"
 msgid ""
 "Export FC params that are missing or different in the configuration steps. "
 "Default is %(default)s"
-msgstr "設定ステップで欠落または異なる FC パラメータをエクスポートします。デフォルトは %(default)s です"
+msgstr ""
+"設定ステップで欠落または異なる FC パラメータをエクスポートします。デフォルト"
+"は %(default)s です"
 
 #: ardupilot_methodic_configurator/frontend_tkinter_parameter_editor.py:1193
 msgid ""
@@ -6567,7 +6586,7 @@ msgstr ""
 "このmainはテストと開発専用です、通常VehicleProjectOpenerWindowは別のスクリプ"
 "トから呼び出されます"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_show.py:393
+#: ardupilot_methodic_configurator/frontend_tkinter_show.py:406
 msgid ""
 "No intermediate parameter files found in the selected '{_dirname}' vehicle "
 "directory.\n"
@@ -6584,11 +6603,11 @@ msgstr ""
 "ディレクトリを選択するだけでなく、ダブルクリックしてディレクトリ内に移動して"
 "ください。"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_show.py:398
+#: ardupilot_methodic_configurator/frontend_tkinter_show.py:411
 msgid "No Parameter Files Found"
 msgstr "パラメータファイルが見つかりません"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_show.py:402
+#: ardupilot_methodic_configurator/frontend_tkinter_show.py:415
 msgid ""
 "{_error_string}\n"
 "\n"
@@ -6600,7 +6619,7 @@ msgstr ""
 "フライトコントローラーをPCに接続し、\n"
 "最低7秒待ってから再試行してください。"
 
-#: ardupilot_methodic_configurator/frontend_tkinter_show.py:403
+#: ardupilot_methodic_configurator/frontend_tkinter_show.py:416
 msgid "No Connection to the Flight Controller"
 msgstr "フライトコントローラーに接続されていません"
 
